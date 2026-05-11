@@ -1,0 +1,43 @@
+.navigator {
+    width: 100%;
+    height: 50px;
+    display: flex; /* Membuat elemen anak sejajar */
+    justify-content: space-around; /* Memberi jarak yang rata antar menu */
+    align-items: center; /* Membuat teks berada di tengah secara vertikal */
+    background-color: #333; /* Warna latar belakang navigator */
+    position: sticky; /* Membuat navigator tetap di atas saat di-scroll */
+    top: 0; /* Menempelkan navigator di bagian atas halaman */
+    z-index: 1000; /* Memastikan navigator berada di atas elemen lain */
+}
+
+.navigator a {
+    color: white; /* Warna teks menu */
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+    font-size: 18px; /* Ukuran font menu */
+    padding: 10px 20px; /* Memberi ruang di sekitar teks menu */
+}
+
+body {
+    background-color: #efc198; /* Warna latar belakang halaman */
+    padding: 0; /* Memberi ruang di dalam body */
+    margin: 0; /* Menghilangkan margin default */
+}
+
+.biodata-grid {
+    display: grid;
+    grid-template-columns: auto auto 1fr; /* Kolom 1: Teks, Kolom 2: Titik Dua, Kolom 3: Isi */
+    gap: 10px 15px; /* Jarak antar baris dan kolom */
+    align-items: center;
+}
+
+.biodata-grid h3 {
+    margin: 0; /* Menghilangkan margin bawaan agar tidak berantakan */
+}
+
+.kontainer {
+    padding: 20px; /* Memberi ruang di dalam kontainer */
+}
+
+.kontainer img {
+    border: 5px solid #333; /* Memberi border pada gambar */
+}
